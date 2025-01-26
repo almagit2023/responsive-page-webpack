@@ -1,0 +1,28 @@
+.container__aside {
+  padding-bottom: var(--footer-height);
+  /* Use footer height for padding */
+}
+
+.side-bar__section {
+  padding: 1rem 2rem;
+  border: thick double var(--section-border-color);
+  margin-bottom: 3rem;
+  line-height: var(--section-para-line-height);
+}
+
+.side-bar__section:first-child {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container__aside {
+    padding-bottom: calc(var(--footer-height) + 15rem);
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__aside {
+    padding-bottom: calc(var(--footer-height) + 20rem);
+  }
+}

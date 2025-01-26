@@ -1,0 +1,108 @@
+.container__header {
+  /* background-color: var(--heading-background-color); */
+  background-image: linear-gradient(to left, var(--heading-background-color), var(--heading-bg-secondary-color));
+
+  /* To make backdrop filter blur work, change to a proper */
+  /* background-image: url('../../assets/images/maple-green.jpg'); */
+  /* background-blend-mode: color-burn; */
+  padding: 1rem 2rem;
+}
+
+.container__header--heading {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1rem 2rem;
+
+  /* Add backdrop-filter with prefix */
+  /* background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+}
+
+.container__header--heading>h1 {
+  text-transform: uppercase;
+  font-family: var(--main-heading-font-family);
+  font-weight: var(--main-heading-font-weight);
+  font-size: var(--main-heading-font-size);
+  color: var(--primary-white-color);
+
+
+  /* Changing Text color */
+  background-image: linear-gradient(to left, rgb(255, 0, 0, 0.2), rgb(255, 255, 0, 0.2)), url("../../assets/images/maple-green.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* filter: blur(1px) */
+}
+
+
+.container__header--navigation {}
+
+.container__header--navigation nav ul {
+  /* text-align: center; */
+
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.container__header--navigation nav ul li {
+  list-style-type: none;
+  /* display: inline-block; */
+  padding: 1rem 3rem;
+  background-color: var(--navigation-items-bg-color);
+  float: left;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container__header--navigation nav ul li:not(:first-child) {
+  margin-left: var(--navigation-items-gutter);
+}
+
+.container__header--navigation nav ul li a {
+  text-decoration: none;
+  color: var(--navigation-items-text-color);
+}
+
+@media screen and (max-width:1024px) {
+  .container__header--navigation nav ul li {
+    width: 50%;
+    border: 2px solid;
+  }
+
+  .container__header--navigation nav ul li:not(:first-child) {
+    margin: 0;
+  }
+
+  .container__header--heading h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container__header--navigation nav ul li {
+    width: 50%;
+    border: 2px solid;
+  }
+
+  .container__header--navigation nav ul li:not(:first-child) {
+    margin: 0;
+  }
+
+  .container__header--heading h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .container__header--navigation nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container__header--heading h1 {
+    text-align: center;
+  }
+}

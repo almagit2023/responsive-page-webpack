@@ -1,0 +1,36 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footer-height);
+  background-color: var(--footer-background-color);
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  color: var(--primary-white-color);
+}
+
+.footer>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer>p {
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .footer>p {
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,13 @@
+@import './styles/utils/_vendor.css';
+@import './styles/base/_variables.css';
+@import './styles/base/_reset.css';
+@import './styles/utils/_utility.css';
+
+@import './styles/layout/_grid.css';
+@import "./styles/components/_container.css";
+@import './styles/components/_header.css';
+@import'./styles/state/_navigation.css';
+@import './styles/components/_sidebar.css';
+@import "./styles/components/_main-block.css";
+@import './styles/components/_contact.css';
+@import "./styles/components/_footer.css";

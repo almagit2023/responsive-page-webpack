@@ -1,0 +1,28 @@
+:root {
+  /* font Variables */
+  --primary-font-family: "Kumbh+Sans", sans-serif;
+  --root-font-size: 62.5%;
+
+  --main-heading-font-family: "Erica+One", sans-serif;
+  --main-heading-font-weight: 900;
+  --main-heading-font-size: clamp(5rem, 4vw + 1rem, 3rem);
+  ;
+
+
+  /* color variables */
+  --navigation-items-bg-color: rgba(208, 235, 255, 1);
+  --navigation-items-text-color: rgba(17, 42, 70, 1);
+  --heading-background-color: #2c3c24;
+  --heading-bg-secondary-color: rgba(52, 76, 52, 0.3);
+  --navigation-items-bg-hover: orange;
+  --primary-white-color: rgba(255, 255, 255, 1);
+  --section-border-color: rgba(208, 235, 255, 0.75);
+  --footer-background-color: #2c3c24;
+
+
+  /* Space Variables */
+  --container-max-width: 120rem;
+  --navigation-items-gutter: 3rem;
+  --section-para-line-height: 3.2rem;
+  --footer-height: 5rem;
+}

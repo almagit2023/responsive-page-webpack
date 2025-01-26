@@ -1,0 +1,8 @@
+.container__header--navigation nav ul li:hover {
+  background-color: var(--navigation-items-bg-hover);
+  transform: scale(1.1);
+}
+
+.container__header--navigation nav ul li a:hover {
+  color: var(--primary-white-color);
+}
