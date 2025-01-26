@@ -3,15 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode === 'production';
-  // const isProduction = argv.mode === 'build';
+  // const isProduction = argv.mode === 'production';
+  const isProduction = argv.mode === 'build';
 
   return {
     mode: argv.mode,
     entry: './main.css',
     output: {
       filename: 'bundle.js',
-      path: path.resolve(__dirname, isProduction ? 'prod' : 'build'), // Dynamic folder based on mode
+      path: path.resolve(__dirname, isProduction ? 'prod' : 'dev'), // Dynamic folder based on mode
     },
     module: {
       rules: [
